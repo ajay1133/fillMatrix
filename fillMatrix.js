@@ -7,8 +7,8 @@ var fillMatrix = function (startRow, startCol, endRow, endCol, output) {
   output.push({
     startRow,
     startCol,
-    endRow: maxRow,
-    endCol: maxCol,
+    endRow: startRow + maxRow,
+    endCol: startCol + maxCol,
     size: `${maxRow} x ${maxCol}`
   });
   return fillMatrix(startRow + maxRow, startCol + maxCol, endRow, endCol, output);     
@@ -35,4 +35,4 @@ var maxPower = function(num) {
 ** param: endCol: 0, type: number
 ** param: output: Output: [], type: array
 */
-console.log(fillMatrix(0, 0, 1, 16, []));
+console.log(fillMatrix(0, 0, 14, 12, []));
