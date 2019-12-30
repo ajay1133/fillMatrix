@@ -1,0 +1,12 @@
+{
+  "name": "fill_matrix",
+  "version": "1.0.0",
+  "description": "Fill a matrix by using maximum blocks of power 2",
+  "main": "fillMatrix.js",
+  "scripts": {
+    "start": "node fillMatrix.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ajay Sharma",
+  "license": "ISC"
+}
