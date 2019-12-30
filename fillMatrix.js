@@ -1,5 +1,5 @@
 var fillMatrix = function (startRow, startCol, endRow, endCol, output) {
-  if (endRow <= startRow || endCol <= startCol) {
+  if (endRow - startRow < 2 || endCol - startCol < 2) {
     return output;
   }
   var maxRow = 1 << maxPower(endRow - startRow);
@@ -35,4 +35,4 @@ var maxPower = function(num) {
 ** param: endCol: 0, type: number
 ** param: output: Output: [], type: array
 */
-console.log(fillMatrix(0, 0, 14, 16, []));
+console.log(fillMatrix(0, 0, 1, 16, []));
