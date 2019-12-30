@@ -27,4 +27,12 @@ var maxPower = function(num) {
   return max;
 }
 
+/* Call fill matrix from here
+** Always start with 0, 0
+** param: startRow: 0, type: number
+** param: startCol: 0, type: number
+** param: endRow: 0, type: number
+** param: endCol: 0, type: number
+** param: output: Output: [], type: array
+*/
 console.log(fillMatrix(0, 0, 14, 16, []));
